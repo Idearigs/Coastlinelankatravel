@@ -1852,13 +1852,13 @@ body {
   background-size: cover;
 }
 .blog:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  background: linear-gradient(#000000 0%, #000000 57.64%, rgba(0, 0, 0, 0) 100%);
-  width: 100%;
-  height: 70%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(#00000000 0%, #00000000 57.64%, rgba(173, 103, 103, 0) 100%);
+    width: 100%;
+    height: 70%;
 }
 .blog .wrap_float {
   position: relative;
@@ -1905,9 +1905,7 @@ body {
   transition: all .2s linear;
   cursor: pointer;
 }
-.blog .btn:hover * {
-  cursor: pointer;
-}
+
 .blog_item {
   width: 48%;
   margin-right: 4%;
@@ -1943,10 +1941,10 @@ body {
 .blog_item_title {
   font-size: 20px;
   font-weight: 900;
-  color: #fff;
+  color: #000000;
   margin-bottom: 15px;
   padding-right: 25px;
-  transition: all .2s linear;
+ 
 }
 .blog_item_text {
   font-size: 14px;
@@ -2266,19 +2264,16 @@ body {
   position: relative;
 }
 .last-section:after {
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
-  height: 90px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  content: '';
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #7d7d7d47 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: '';
 }
 @media screen and (min-height: 840px) {
   .container.fullheight {
@@ -3026,7 +3021,7 @@ body {
     overflow: hidden;
   }
   .blog_item {
-    width: 49%;
+    width: 50%;
     margin-right: 2%;
   }
   .blog_item:nth-child(2) {
