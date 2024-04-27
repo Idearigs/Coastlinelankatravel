@@ -20,6 +20,10 @@
 /*------------------------------------------------------------------
 1. Main page
 -------------------------------------------------------------------*/
+
+.btnm{
+  margin-top: 40px;
+}
 *:hover {
   cursor: default;
 }
@@ -1392,6 +1396,24 @@ body {
   margin-left: -13px;
   content: '';
 }
+.search_tour .fields__block .fields .field.textarea_wrap {
+  width: calc(100% - 20px); /* Adjust width for the textarea */
+}
+.search_tour .fields__block .fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap value as needed */
+}
+
+.search_tour .fields__block .fields .field {
+  width: calc(25% - 20px); /* Adjust width to fit four fields per row with gap */
+}
+
+.search_tour .fields__block .fields .field.half {
+  width: calc(50% - 10px); /* Adjust width for half-width fields with gap */
+}
+
 .search_tour .search_tour_form .fields__block .submit:hover {
   background: #d46a00;
   transition: all .2s linear;
@@ -3103,6 +3125,10 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
+
+  .btnm{
+    margin-top: 10px;
+  }
   .homepage_slider .most_popular {
     bottom: 170px;
   }
