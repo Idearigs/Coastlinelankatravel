@@ -57,17 +57,20 @@
     <meta content="#000" name="msapplication-TileColor" />
     <meta content="#000" name="theme-color" />
   </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
 
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
   <body>
+    <header id="header"></header>
     <div class="container">
-      <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script>
+      
       <div class="homepage_slider">
         <div class="slider-container">
           <div class="slider-control left inactive"></div>
@@ -291,7 +294,7 @@
                   <h3 class="title">
                     Wildlife Wanderlust Trail | Best Wildlife tour of the year
                   </h3>
-                  <p class="description">Sample package description</p>
+                  <p class="description">Nine days chasing the untamed beauty of Sri Lanka’s wildlife.</p>
                   <div class="days">
                     <span>9 days</span>
                   </div>
@@ -319,7 +322,7 @@
                   <h3 class="title">
                     Legacy Lanka Trail | Best Culture tour of the year
                   </h3>
-                  <p class="description">Sample package Name</p>
+                  <p class="description">A 7-day journey through Sri Lanka’s storied past and heritage sites.</p>
                   <div class="days">
                     <span>7 days</span>
                   </div>
@@ -699,8 +702,7 @@
         </div>
       </div>
 
-      <!-- footer -->
-      <div class="footer" id="footer">
+    
       </div>
     </div>
 
@@ -766,16 +768,6 @@
       </div>
     </div>
 
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"
-    ></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/slick.min.js"></script>
-    <script defer src="js/jquery.arcticmodal.min.js"></script>
-    <script defer src="js/lightgallery.js"></script>
-    <script defer src="js/spincrement.min.js"></script>
-    <script defer src="js/scripts.min.js"></script>
+    <footer id="footer"></footer>
   </body>
 </html>

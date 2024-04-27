@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>          Lanka Adventure Trail | Coastlinelankatravel</title>
+    <title>Lanka Adventure Trail | Coastlinelankatravel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,17 +18,22 @@
     <meta content="#000" name="msapplication-TileColor">
     <meta content="#000" name="theme-color">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+
 
 <body>
+      <header id="header"></header>
     <div class="container">
-        <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script>
+
         <div class="breadcrumbs">
             <div class="wrap">
                 <div class="wrap_float">
@@ -468,8 +473,7 @@ Pick your favorites or see them all!
                 Book now
             </div>
         </div>
-        <div class="footer" id="footer">
-        </div>
+       
     </div>
 
     <div class="search_form" id="search_form">
@@ -535,15 +539,10 @@ Pick your favorites or see them all!
             <div class="modal_close"></div>
         </div>
     </div>
+ <footer class="footer" id="footer">
+        </footer>
 
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/slick.min.js"></script>
-    <script defer src="js/jquery.arcticmodal.min.js"></script>
-    <script defer src="js/lightgallery.js"></script>
-    <script defer src="js/spincrement.min.js"></script>
-    <script defer src="js/scripts.min.js"></script>
+
 </body>
 
 </html>

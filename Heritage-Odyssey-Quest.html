@@ -57,17 +57,20 @@
     <meta content="#000" name="msapplication-TileColor" />
     <meta content="#000" name="theme-color" />
   </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
 
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
   <body>
+    <header id="header"></header>
     <div class="container">
-      <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script>
+
       <div class="breadcrumbs">
         <div class="wrap">
           <div class="wrap_float">
@@ -699,7 +702,7 @@
           Book now
         </div>
       </div>
-      <div class="footer" id="footer"></div>
+    
     </div>
 
     <div class="search_form" id="search_form">
@@ -763,17 +766,6 @@
         <div class="modal_close"></div>
       </div>
     </div>
-
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"
-    ></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/slick.min.js"></script>
-    <script defer src="js/jquery.arcticmodal.min.js"></script>
-    <script defer src="js/lightgallery.js"></script>
-    <script defer src="js/spincrement.min.js"></script>
-    <script defer src="js/scripts.min.js"></script>
+<footer id="footer"></footer>
   </body>
 </html>

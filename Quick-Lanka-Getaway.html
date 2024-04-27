@@ -19,16 +19,21 @@
     <meta content="#000" name="theme-color">
 </head>
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+
 <body>
+    <header id="header"></header>
     <div class="container">
-        <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script>
+        
         <div class="breadcrumbs">
             <div class="wrap">
                 <div class="wrap_float">
