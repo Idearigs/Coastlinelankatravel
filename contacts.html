@@ -18,17 +18,21 @@
     <meta content="#000" name="msapplication-TileColor">
     <meta content="#000" name="theme-color">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
 
 <body>
+    <header id="header"></header>
     <div class="container">
-        <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script><div class="breadcrumbs">
+       <div class="breadcrumbs">
             <div class="wrap">
                 <div class="wrap_float">
                     <a href="#">Home</a>
@@ -76,8 +80,7 @@
                 <div class="mab-block" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.807960043346!2d79.89240947499644!3d6.913550393085976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25988791b2e2d%3A0xe64a826b0ed6dad!2sCoastline%20lanka%20travels!5e0!3m2!1sen!2slk!4v1712931086253!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
         </div>
-        <div class="footer" id="footer">
-           
+    
         </div>
     </div>
 
@@ -145,14 +148,7 @@
         </div>
     </div>
 
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/slick.min.js"></script>
-    <script defer src="js/jquery.arcticmodal.min.js"></script>
-    <script defer src="js/lightgallery.js"></script>
-    <script defer src="js/spincrement.min.js"></script>
-    <script defer src="js/scripts.min.js"></script>
+   <footer id="footer"></footer>
 </body>
 
 </html>
