@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Lavella – Tour & Travel Agency Template</title>
+    <title>Coastlinelankatravels | Sri lanka tour list</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,17 +18,21 @@
     <meta content="#000" name="msapplication-TileColor">
     <meta content="#000" name="theme-color">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+
+<script>
+  
+  $(document).ready(function () {
+    $("#header").load("navbar.html");
+    $("#footer").load("footer.html");
+  });
+</script>
 
 <body>
+    <header id="header"></header>
     <div class="container">
-        <div id="header"></div>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("navbar.html");
-          $("#footer").load("footer.html");
-        });
-      </script>
+        
         <div class="breadcrumbs">
             <div class="wrap">
                 <div class="wrap_float">
@@ -436,77 +440,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer_top">
-                <div class="wrap">
-                    <div class="wrap_float">
-                        <div class="footer_head_mobile">
-                            <div class="logo">lavella</div>
-                            <div class="text">
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            </div>
-                        </div>
-                        <div class="footer_top_menu">
-                            <ul>
-                                <li><a href="/" class="active">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="tour-list.html">Tour List</a></li>
-                                <li><a href="destinations.html">Destinations</a></li>
-                                <li><a href="single.html">Date & Pricing</a></li>
-                                <li><a href="blog-list.html">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div class="socials">
-                            <a href="#" class="a facebook"></a>
-                            <a href="#" class="a instagram"></a>
-                            <a href="#" class="a pinterest"></a>
-                            <a href="#" class="a twitter"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_center">
-                <div class="wrap">
-                    <div class="wrap_float">
-                        <div class="footer_center_left">
-                            <a href="/" class="logo">lavella</a>
-                            <div class="text">
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            </div>
-                        </div>
-                        <div class="footer_center_menu">
-                            <ul>
-                                <li><a href="#">Newsletter</a></li>
-                                <li><a href="#">Family Friendly Tours</a></li>
-                                <li><a href="#">Outdoor Activites</a></li>
-                                <li><a href="#">Relaxation Tours</a></li>
-                                <li><a href="#">City Tours</a></li>
-                                <li><a href="#">Holiday & Seasonal Tours</a></li>
-                                <li><a href="#">Cultural & Thematic Tours</a></li>
-                                <li><a href="#">Wild & Adventure Tours</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_center_right">
-                            <div class="_title">CONTACTS</div>
-                            <div class="text">
-                                <p>Address: <b>12 Main Street Pt. London</b> </p>
-                                <p>Phone: <a href="#">+1 1235 6789 10</a></p>
-                                <p><a href="#">info@hellodigi.ru</a></p>
-                            </div>
-                        </div>
-                        <div class="mobile_socials">
-                            <a href="#" class="a facebook"></a>
-                            <a href="#" class="a instagram"></a>
-                            <a href="#" class="a pinterest"></a>
-                            <a href="#" class="a twitter"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                Copyright 2020 <a href="#">hellodigi.ru</a> | All Right Reserved
-            </div>
-        </div>
+        
     </div>
 
     <div class="search_form" id="search_form">
@@ -573,14 +507,7 @@
         </div>
     </div>
 
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/slick.min.js"></script>
-    <script defer src="js/jquery.arcticmodal.min.js"></script>
-    <script defer src="js/lightgallery.js"></script>
-    <script defer src="js/spincrement.min.js"></script>
-    <script defer src="js/scripts.min.js"></script>
+    <footer id="footer"></footer>
 </body>
 
 </html>
