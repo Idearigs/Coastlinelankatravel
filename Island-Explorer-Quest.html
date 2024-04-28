@@ -20,6 +20,7 @@
     <meta content="#000" name="theme-color">
 </head>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         
 
 <script>
@@ -626,13 +627,13 @@
               <div class="field half">
                 <label class="label" for="name-2">Full Name*</label>
                 <div class="input_wrap">
-                  <input type="text" class="input" id="name-2" />
+                  <input type="text" class="input" id="name" />
                 </div>
               </div>
               <div class="field half">
                 <label class="label" for="email-2">Email Address*</label>
                 <div class="input_wrap">
-                  <input type="email" class="input" id="email-2" />
+                  <input type="email" class="input" id="email" />
                 </div>
               </div>
               <div class="field half">
@@ -644,29 +645,29 @@
               <div class="field half">
                 <label class="label" for="date-2a">Departure</label>
                 <div class="input_wrap calendar-field">
-                  <input type="text" class="input js_calendar" id="date-2a" />
+                  <input type="text" class="input js_calendar" id="date-2b" />
                 </div>
               </div>
                 <div class="field half">
                 <p class="label">Flight number</p>
                 <div class="input_wrap">
-                  <input type="text" class="input" id="date-2" />
+                  <input type="text" class="input" id="f_num" />
                 </div>
               </div>
               <div class="field half">
                 <p class="label">Number travlers</p>
                 <div class="input_wrap">
-                  <input type="text" class="input" id="date-2" />
+                  <input type="text" class="input" id="num" />
                 </div>
               </div>
               <div class="field">
-                <label class="label" for="enquiry-2">Your Enquiry*</label>
+                <label class="label" for="enquiry">Your Enquiry*</label>
                 <div class="textarea_wrap">
-                  <textarea class="textarea" id="enquiry-2"></textarea>
+                  <textarea class="textarea" id="enquiry"></textarea>
                 </div>
               </div>
             </div>
-            <button class="btn submit">Sumbit</button>
+            <button class="btn submit" id="emailjs">Sumbit</button>
           </div>
         </div>
         <div class="modal_close"></div>
@@ -675,5 +676,5 @@
     <footer id="footer"></footer>
  
 </body>
-
+<script src="email.js"></script>
 </html>

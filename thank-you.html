@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lavella – Tour & Travel Agency Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="#000" name="msapplication-TileColor">
+    <meta content="#000" name="theme-color">
+   
+</head>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+  $("#header").load("navbar.html");
+  $("#footer").load("footer.html");
+});
+</script>
+
+<body>
+    <header id="header"></header>
+    
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div>
+            <div class="mb-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75"
+                    fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+            </div>
+            <div class="text-center">
+                <h1>Thank you for choosing us !</h1>
+                <p>We will contact you as soon as possible </p>
+                <a href="/"><button class="btn btn-primary">Back Home</button></a>
+                
+            </div>
+        </div>
+    <footer id="footer"></footer>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE&callback=initMap"></script>
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/jquery-ui.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/jquery.arcticmodal.min.js"></script>
+    <script defer src="js/lightgallery.js"></script>
+    <script defer src="js/spincrement.min.js"></script>
+    <script defer src="js/scripts.min.js"></script>
+</body>
+
+</html>
