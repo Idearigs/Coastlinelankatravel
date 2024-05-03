@@ -11,8 +11,16 @@ $(document).ready(function() {
             // If validation passes, proceed to send emails
             sendEmails();
         } else {
+            Swal.fire({
+                title: "Please fill out all required fields.",
+                
+                icon: "error",
+                confirmButtonColor: "#d46a00" // Set the color of the "OK" button
+              });
+              
+              
             // Show alert if required fields are empty
-            alert('Please fill out all required fields.');
+            // alert('Please fill out all required fields.');
         }
     });
 
