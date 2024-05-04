@@ -32,7 +32,7 @@ $(document).ready(function() {
             $("#date-2a").val() === "" ||
             $("#date-2b").val() === "" ||
             $("#f_num").val() === "" ||
-            $("#num").val() === "" ||
+            $("#numA").val() === "" ||
             $("#enquiry").val() === "") {
             return false;
         }
@@ -47,7 +47,8 @@ $(document).ready(function() {
             arrival_date: $("#date-2a").val(),
             departure_date: $("#date-2b").val(),
             flight_number: $("#f_num").val(),
-            travelers_number: $("#num").val(),
+            travelers_number: $("#numA").val(),
+            child_number: $("#numC").val(),
             enquiry: $("#enquiry").val()
         };
 
@@ -61,16 +62,35 @@ $(document).ready(function() {
                     .then(function(response) {
                         console.log('Email sent to customer:', response);
                         // Redirect to thank-you.html after successful email sending
-                        window.location.href = 'thank-you.html';
+                        Swal.fire({
+                            title: "Success.",
+                            icon: "success",
+                            confirmButtonColor: "#d46a00", // Set the color of the "OK" button
+                            preConfirm: function() {
+                              // Trigger the click event of the modal_close element
+                              document.querySelector('.modal_close').click();
+                            }
+                          });
+                          
+                          
                     }, function(error) {
                         console.error('Error sending email to customer:', error);
-                        // Show error message in a popup
-                        alert('Error sending email to customer: ' + error);
+                        Swal.fire({
+                            title: "error",
+                            
+                            icon: "error",
+                            confirmButtonColor: "#d46a00" // Set the color of the "OK" button
+                          });
                     });
             }, function(error) {
                 console.error('Error sending email to yourself:', error);
                 // Show error message in a popup
-                alert('Error sending email to yourself: ' + error);
+                Swal.fire({
+                    title: "error",
+                    
+                    icon: "error",
+                    confirmButtonColor: "#d46a00" // Set the color of the "OK" button
+                  });
             });
     }
 });
