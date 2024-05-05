@@ -49,7 +49,9 @@ $(document).ready(function() {
             flight_number: $("#f_num").val(),
             travelers_number: $("#numA").val(),
             child_number: $("#numC").val(),
-            enquiry: $("#enquiry").val()
+            enquiry: $("#enquiry").val(),
+            pname: $("#pname").val()
+
         };
 
         // Send email to yourself
