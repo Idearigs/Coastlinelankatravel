@@ -21,7 +21,7 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="email.js"></script>
+
         
 
 <script>
@@ -808,12 +808,12 @@ Embark on a 13-day tour of Sri Lanka, starting in Negombo, exploring the heritag
                     <input type="text" class="input" id="numA" />
                   </div>
                 </div>
-                <div class="field half">
-                  <p class="label">Number Children</p>
-                  <div class="input_wrap">
-                    <input type="text" class="input" id="numC"/>
+                <div class="field ">
+                    <p class="label">Number Children</p>
+                    <div class="textarea_wrap">
+                      <textarea class="textarea" id="numC"></textarea>
+                    </div>
                   </div>
-                </div>
                 <div class="field">
                   <label class="label" for="enquiry">Your Enquiry*</label>
                   <div class="textarea_wrap">
@@ -821,7 +821,7 @@ Embark on a 13-day tour of Sri Lanka, starting in Negombo, exploring the heritag
                   </div>
                 </div>
               </div>
-            <button class="btn submit">Submit</button>
+            <button class="btn submit" id="emailjs" >Submit</button>
           </div>
         </div>
         <div class="modal_close"></div>
@@ -830,5 +830,5 @@ Embark on a 13-day tour of Sri Lanka, starting in Negombo, exploring the heritag
 
     <footer id="footer"></footer>
 </body>
-
+<script src="email.js"></script>
 </html>
