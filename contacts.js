@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Initialize EmailJS with your account ID
-    emailjs.init("YOUR_EMAILJS_USER_ID");
+    emailjs.init("4Ka-C28fB9Wo7uUUS");
 
     // Add event listener to the submit button
     $("#submitForm").on("click", function (e) {
@@ -38,7 +38,7 @@ $(document).ready(function() {
         };
 
         // Send email
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+        emailjs.send('service_66vfecl', 'template_9wwe9hr', formData)
             .then(function(response) {
                 console.log('Email sent:', response);
                 Swal.fire({
