@@ -1223,7 +1223,7 @@ body {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.49);
   font-weight: 400;
-  font-style: italic;
+
   line-height: 1.6;
 }
 .search_tour {
@@ -1756,7 +1756,7 @@ body {
 }
 .top_destination .description .text {
   font-size: 18px;
-  color: #818693;
+  color: #dee0e4;
   line-height: 1.45;
 }
 .top_destination .section_content {
