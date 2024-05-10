@@ -22,6 +22,10 @@
     <meta content="#000" name="theme-color">
   </head>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="indexform.js"></script>
+
 
   <script>
     $(document).ready(function () {
@@ -450,7 +454,7 @@
                       </div>
                     </div>
                     <div class="field half">
-                      <label class="label" for="date-2a">Departure*</label>
+                      <label class="label" for="date-2b">Departure*</label>
                       <div class="input_wrap calendar-field">
                         <input
                           type="text"
@@ -462,19 +466,20 @@
                     <div class="field half">
                       <p class="label">Flight number*</p>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="date-2" />
+                        <input type="text" class="input" id="f_num" />
                       </div>
                     </div>
                     <div class="field half">
                       <p class="label">Number of travelers*</p>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="date-2" />
+                        <input type="text" class="input" id="numA" />
                       </div>
                     </div>
                     <div class="field half">
                       <p class="label">Kids with age (Name = age)</p>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="date-2" />
+                        <input type="text" class="input" id="numC" />
+                      
                       </div>
                     </div>
                     <div class="field half">
@@ -485,7 +490,7 @@
                     </div>
                     <div class="field">
                       <div class="input_wrap btnm">
-                        <a href="Blissful-Union-Journey.html" class="btn"
+                        <a  class="btn"
                           >Book Now !</a
                         >
                       </div>
