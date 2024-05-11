@@ -448,6 +448,7 @@
               <p class="section_title">
                 Ready to Travel? Choose your dream tour here
               </p>
+              <form id="tourForm">
               <div
                 class="fields__block"
                 style="display: flex; justify-content: space-between"
@@ -457,13 +458,13 @@
                     <div class="field half">
                       <label class="label" for="name-2">Full name*</label>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="name-2" />
+                        <input type="text" class="input" id="name-2"  required/>
                       </div>
                     </div>
                     <div class="field half">
                       <label class="label" for="email-2">Email Address*</label>
                       <div class="input_wrap">
-                        <input type="email" class="input" id="email-2" />
+                        <input type="email" class="input" id="email-2" required/>
                       </div>
                     </div>
                     <div class="field half">
@@ -473,6 +474,7 @@
                           type="text"
                           class="input js_calendar"
                           id="date-2a"
+                          required
                         />
                       </div>
                     </div>
@@ -483,19 +485,20 @@
                           type="text"
                           class="input js_calendar"
                           id="date-2b"
+                          required
                         />
                       </div>
                     </div>
                     <div class="field half">
                       <p class="label">Flight number*</p>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="f_num" />
+                        <input type="text" class="input" id="f_num" required />
                       </div>
                     </div>
                     <div class="field half">
                       <p class="label">Number of travelers*</p>
                       <div class="input_wrap">
-                        <input type="text" class="input" id="numA" />
+                        <input type="number" class="input" id="numA" required />
                       </div>
                     </div>
                     <div class="field half">
@@ -508,18 +511,17 @@
                     <div class="field half">
                       <label class="label" for="enquiry-2">Your Enquiry*</label>
                       <div class="input_wrap">
-                        <textarea class="input" id="enquiry-2"></textarea>
+                        <textarea class="input" id="enquiry-2" required></textarea>
                       </div>
                     </div>
                     <div class="field">
                       <div class="input_wrap btnm">
-                        <a  class="btn"
-                          >Book Now !</a
-                        >
+                        <button type="submit" class="btn btnff">Book Now !</button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
 $(document).ready(function() {
     // Initialize EmailJS with your account ID
-    emailjs.init("KOM6zqqW8trM21JVm");
+    emailjs.init("4Ka-C28fB9Wo7uUUS");
 
     // Add event listener to the submit button
-    $(".btn").on("click", function (e) {
+    $("#tourForm").on("submit", function (e) {
         e.preventDefault();
         
         // Check if required fields are filled out
@@ -49,7 +49,7 @@ $(document).ready(function() {
         };
 
         // Send email
-        emailjs.send("service_abomylq", "template_y9ahw43", formData).then(
+        emailjs.send("service_66vfecl", "template_l3sruvd", formData).then(
           function (response) {
             console.log("Email sent:", response);
             Swal.fire({
