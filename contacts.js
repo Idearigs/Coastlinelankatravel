@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Initialize EmailJS with your account ID
-    emailjs.init("4Ka-C28fB9Wo7uUUS");
+    emailjs.init("KOM6zqqW8trM21JVm");
 
     // Add event listener to the submit button
     $("#submitForm").on("click", function (e) {
@@ -38,28 +38,30 @@ $(document).ready(function() {
         };
 
         // Send email
-        emailjs.send('service_66vfecl', 'template_9wwe9hr', formData)
-            .then(function(response) {
-                console.log('Email sent:', response);
-                Swal.fire({
-                    title: "Success.",
-                    icon: "success",
-                    confirmButtonColor: "#d46a00",
-                    preConfirm: function() {
-                        // Reset form after successful submission if needed
-                        $("#name-2").val("");
-                        $("#email-2").val("");
-                        $("#enquiry-2").val("");
-                    }
-                });
-            }, function(error) {
-                console.error('Error sending email:', error);
-                Swal.fire({
-                    title: "Error",
-                    text: "Failed to send email. Please try again later.",
-                    icon: "error",
-                    confirmButtonColor: "#d46a00"
-                });
+        emailjs.send("service_abomylq", "template_xebcanl", formData).then(
+          function (response) {
+            console.log("Email sent:", response);
+            Swal.fire({
+              title: "Success.",
+              icon: "success",
+              confirmButtonColor: "#d46a00",
+              preConfirm: function () {
+                // Reset form after successful submission if needed
+                $("#name-2").val("");
+                $("#email-2").val("");
+                $("#enquiry-2").val("");
+              },
             });
+          },
+          function (error) {
+            console.error("Error sending email:", error);
+            Swal.fire({
+              title: "Error",
+              text: "Failed to send email. Please try again later.",
+              icon: "error",
+              confirmButtonColor: "#d46a00",
+            });
+          }
+        );
     }
 });

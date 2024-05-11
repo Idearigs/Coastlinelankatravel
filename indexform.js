@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Initialize EmailJS with your account ID
-    emailjs.init("4Ka-C28fB9Wo7uUUS");
+    emailjs.init("KOM6zqqW8trM21JVm");
 
     // Add event listener to the submit button
     $(".btn").on("click", function (e) {
@@ -49,34 +49,36 @@ $(document).ready(function() {
         };
 
         // Send email
-        emailjs.send('service_66vfecl', 'template_l3sruvd', formData)
-            .then(function(response) {
-                console.log('Email sent:', response);
-                Swal.fire({
-                    title: "Email sent successfully!",
-                    
-                    icon: "success",
-                    confirmButtonColor: "#d46a00"
-                }).then((result) => {
-                    // Reset form after successful submission if needed
-                    if (result.isConfirmed) {
-                        $("#name-2").val("");
-                        $("#email-2").val("");
-                        $("#date-2a").val("");
-                        $("#date-2b").val("");
-                        $("#f_num").val("");
-                        $("#numA").val("");
-                        $("#enquiry-2").val("");
-                    }
-                });
-            }, function(error) {
-                console.error('Error sending email:', error);
-                Swal.fire({
-                    title: "Failed to send email.",
-                  
-                    icon: "error",
-                    confirmButtonColor: "#d46a00"
-                });
+        emailjs.send("service_abomylq", "template_y9ahw43", formData).then(
+          function (response) {
+            console.log("Email sent:", response);
+            Swal.fire({
+              title: "Email sent successfully!",
+
+              icon: "success",
+              confirmButtonColor: "#d46a00",
+            }).then((result) => {
+              // Reset form after successful submission if needed
+              if (result.isConfirmed) {
+                $("#name-2").val("");
+                $("#email-2").val("");
+                $("#date-2a").val("");
+                $("#date-2b").val("");
+                $("#f_num").val("");
+                $("#numA").val("");
+                $("#enquiry-2").val("");
+              }
             });
+          },
+          function (error) {
+            console.error("Error sending email:", error);
+            Swal.fire({
+              title: "Failed to send email.",
+
+              icon: "error",
+              confirmButtonColor: "#d46a00",
+            });
+          }
+        );
     }
 });
