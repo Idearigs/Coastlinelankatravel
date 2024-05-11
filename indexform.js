@@ -14,7 +14,7 @@ $(document).ready(function() {
             Swal.fire({
                 title: "Please fill out all required fields.",
                 
-                icon: "error",
+                icon: "error",  
                 confirmButtonColor: "#d46a00"
             });
         }
