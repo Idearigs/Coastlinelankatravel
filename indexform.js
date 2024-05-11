@@ -3,7 +3,7 @@ $(document).ready(function() {
     emailjs.init("KOM6zqqW8trM21JVm");
 
     // Add event listener to the submit button
-    $(".btn").on("click", function (e) {
+    $(".btnff").on("click", function (e) {
         e.preventDefault();
         
         // Check if required fields are filled out
