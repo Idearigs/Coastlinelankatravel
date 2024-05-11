@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Initialize EmailJS with your account ID
-    emailjs.init("4Ka-C28fB9Wo7uUUS");
+    emailjs.init("aadmGGTqnZM9PXJ_Y");
 
     // Add event listener to the button for sending emails
     $("#emailjs").on("click", function (e) {
@@ -55,44 +55,46 @@ $(document).ready(function() {
         };
 
         // Send email to yourself
-        emailjs.send('service_66vfecl', 'template_9wwe9hr', formData)
-            .then(function(response) {
-                console.log('Email sent to yourself:', response);
+        emailjs.send("service_z1jltym", "template_bhbo95m", formData).then(
+          function (response) {
+            console.log("Email sent to yourself:", response);
 
-                // Send email to the customer
-                emailjs.send('service_66vfecl', 'template_l3sruvd', formData)
-                    .then(function(response) {
-                        console.log('Email sent to customer:', response);
-                        // Redirect to thank-you.html after successful email sending
-                        Swal.fire({
-                            title: "Success.",
-                            icon: "success",
-                            confirmButtonColor: "#d46a00", // Set the color of the "OK" button
-                            preConfirm: function() {
-                              // Trigger the click event of the modal_close element
-                              document.querySelector('.modal_close').click();
-                            }
-                          });
-                          
-                          
-                    }, function(error) {
-                        console.error('Error sending email to customer:', error);
-                        Swal.fire({
-                            title: "error",
-                            
-                            icon: "error",
-                            confirmButtonColor: "#d46a00" // Set the color of the "OK" button
-                          });
-                    });
-            }, function(error) {
-                console.error('Error sending email to yourself:', error);
-                // Show error message in a popup
+            // Send email to the customer
+            emailjs.send("service_z1jltym", "template_edp3ykt", formData).then(
+              function (response) {
+                console.log("Email sent to customer:", response);
+                // Redirect to thank-you.html after successful email sending
                 Swal.fire({
-                    title: "error",
-                    
-                    icon: "error",
-                    confirmButtonColor: "#d46a00" // Set the color of the "OK" button
-                  });
+                  title: "Success.",
+                  icon: "success",
+                  confirmButtonColor: "#d46a00", // Set the color of the "OK" button
+                  preConfirm: function () {
+                    // Trigger the click event of the modal_close element
+                    document.querySelector(".modal_close").click();
+                  },
+                });
+              },
+              function (error) {
+                console.error("Error sending email to customer:", error);
+                Swal.fire({
+                  title: "error",
+
+                  icon: "error",
+                  confirmButtonColor: "#d46a00", // Set the color of the "OK" button
+                });
+              }
+            );
+          },
+          function (error) {
+            console.error("Error sending email to yourself:", error);
+            // Show error message in a popup
+            Swal.fire({
+              title: "error",
+
+              icon: "error",
+              confirmButtonColor: "#d46a00", // Set the color of the "OK" button
             });
+          }
+        );
     }
 });
