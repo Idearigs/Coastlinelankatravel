@@ -6867,7 +6867,7 @@ body {
   .dark .description {
     padding: 0;
   }
-  .mobile-fixed-bottom {
+ .mobile-fixed-bottom {
     display: none;
     width: 70px;
     height: 70px;
@@ -6879,9 +6879,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    right: 4vw;
+    left: 4vw;  /* Changed from right to left */
     bottom: 4vw;
-  }
+}
+
   .single-page .main .section-top .controls .btn {
     max-width: 280px;
     width: 100%;
